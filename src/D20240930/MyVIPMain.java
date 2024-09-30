@@ -19,9 +19,9 @@ public class MyVIPMain {
 
         MyVIPDTO dto = new MyVIPDTO();
 
-        System.out.println("이름을 입력하세요");
+        System.out.println("이름을 입력하세요1");
         dto.setName(sc.next());
-        System.out.println("날짜를 입력하세요");
+        System.out.println("날짜를 입력하세요1");
         dto.setBirth(Date.valueOf(sc.next()));
 
         int result = dao.insert(dto);
