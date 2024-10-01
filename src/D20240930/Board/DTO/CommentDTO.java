@@ -13,7 +13,7 @@ public class CommentDTO {
   private java.sql.Timestamp updtDt;
 
 
-  public long getCNo() {
+  public int getCNo() {
     return cNo;
   }
 
