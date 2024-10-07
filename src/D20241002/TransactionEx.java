@@ -20,7 +20,11 @@ public class TransactionEx {
             pstmt1 = conn.prepareStatement(sql1);
             pstmt1.setDouble(1, 500);
             pstmt1.setInt(2, 12345);
-            pstmt1.executeUpdate();
+            int n = pstmt1.executeUpdate();
+
+            if (n == 1) {
+                throw new SQLException();
+            }
 
             String sql2 = "UPDATE accounts SEt balance = balance + ? WHERE account_id = ?";
             pstmt2 = conn.prepareStatement(sql2);
@@ -42,11 +46,11 @@ public class TransactionEx {
             }
 
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             try {
-                if (pstmt1 != null ) pstmt1.close();
-                if (pstmt2 != null ) pstmt2.close();
-                if (conn != null ) conn.close();
+                if (pstmt1 != null) pstmt1.close();
+                if (pstmt2 != null) pstmt2.close();
+                if (conn != null) conn.close();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }

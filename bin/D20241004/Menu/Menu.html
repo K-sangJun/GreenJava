@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메뉴판</title>
+</head>
+<style>
+  body{
+    height: 650px;
+  }
+  *{
+    font-family: "Adobe Devanagari";
+    color: saddlebrown;
+  }
+  .menu{
+    text-align: center;
+    font-size: 100px;
+  }
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+  }
+  .wrap table{
+    width: 45%;
+    height: 45%;
+  }
+  .wrap th{
+    text-align: left;
+    font-size: 30px;
+    border-bottom:1px solid saddlebrown;
+  }
+  .wrap th:nth-child(2), td:nth-child(2){
+    text-align: right;
+  }
+  .detail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .detail ul{
+    width: 60%;
+  }
+  .detail ul li{
+    font-size: 15px;
+  }
+  .detail .img{
+    width: 35%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+  }
+  img{
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
+  }
+
+</style>
+<body>
+  <div class="menu">MENU</div>
+  <div class="wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>COFFEE</th>
+          <th>HOT/ICE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>아메리카노</td>
+          <td>5.0/5.5</td>
+        </tr>
+        <tr>
+          <td>카페라떼/카푸치노</td>
+          <td>6.0/6.5</td>
+        </tr>
+        <tr>
+          <td>바닐라라떼/카페모카</td>
+          <td>6.0/6.5</td>
+        </tr>
+        <tr>
+          <td>카라멜마끼아또</td>
+          <td>6.5/7.0</td>
+        </tr>
+        <tr>
+          <td>돌체라떼/아포가토</td>
+          <td>7.5/7.5</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>NON COFFEE</th>
+          <th>HOT/ICE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>밀크티라떼</td>
+          <td>6.0/6.5</td>
+        </tr>
+        <tr>
+          <td>그린티라떼</td>
+          <td>6.0/6.5</td>
+        </tr>
+        <tr>
+          <td>제주말차라떼</td>
+          <td>6.5/7.0</td>
+        </tr>
+        <tr>
+          <td>초코라떼</td>
+          <td>6.0/6.5</td>
+        </tr>
+        <tr>
+          <td>흑임자라떼</td>
+          <td>6.0/6.5</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>ADE</th>
+          <th>ICE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>레몬에이드</td>
+          <td>6.0</td>
+        </tr>
+        <tr>
+          <td>블루레몬에이드</td>
+          <td>6.0</td>
+        </tr>
+        <tr>
+          <td>자몽에이드</td>
+          <td>6.0</td>
+        </tr>
+        <tr>
+          <td>유자에이드</td>
+          <td>6.0</td>
+        </tr>
+        <tr>
+          <td>패션에이드</td>
+          <td>6.0</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>SMOOTHIE</th>
+          <th>ICE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>딸기스무디</td>
+          <td>7.0</td>
+        </tr>
+        <tr>
+          <td>망고스무디</td>
+          <td>7.0</td>
+        </tr>
+        <tr>
+          <td>블루베리스무디</td>
+          <td>7.0</td>
+        </tr>
+        <tr>
+          <td>그린티프라페</td>
+          <td>7.0</td>
+        </tr>
+        <tr>
+          <td>모카프라페</td>
+          <td>7.0</td>
+        </tr>
+
+      </tbody>
+    </table>
+    <div class="detail">
+      <ul>
+        <li>커피 메뉴는 디카페인 가능합니다.</li>
+        <li>모든 메뉴 테이크아웃 가능합니다.</li>
+      </ul>
+      <div class="img">
+        <img src="https://cdn.pixabay.com/photo/2022/11/01/05/18/coffee-7561288_1280.jpg">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
