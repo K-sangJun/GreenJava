@@ -13,7 +13,7 @@ public class InfiniteArrayObject<T> {
     // 배열 크기 증가
     private void grow() {
         if (size == arr.length) {
-            Object[] newArr = new Object[arr.length * 2];
+            Object[] newArr = new Object[arr.length + 5];
             System.arraycopy(arr, 0, newArr, 0, arr.length);
             arr = newArr;
         }
@@ -38,7 +38,6 @@ public class InfiniteArrayObject<T> {
     }
 
     // 가져오기 (get)
-    @SuppressWarnings("unchecked")
     public T get(int idx) {
         if (idx >= size || idx < 0) {
             throw new IndexOutOfBoundsException("존재하지 않는 값");
